@@ -1,13 +1,13 @@
 /* 
 
-	entidades: funcionarios, livros, clientes, comentarios, multas, emprestimos(Entidade associativa), compra_livros
+	entidades: Reservas, livros, clientes, comentarios, multas, emprestimos(Entidade associativa), compra_livros
 
 	atributos: clientes:
 	{
 			id
 			nome, 
 			cpf,
-			nº telefone
+			nÂº telefone
 
 	}
 
@@ -16,7 +16,7 @@
 			id,
 			nome,
 			autor,
-			nº de paginas,
+			nÂº de paginas,
 			quantidade:
 
 	
@@ -30,6 +30,13 @@
 		id_cliente
 	}
 
+	reservas:{
+		id,
+		id_cliente,
+		id_livro,
+		
+	}
+
 	multas:
 	{
 		id,
@@ -40,7 +47,7 @@
 
 	}
 
-	emprestimos:
+	emprestimos
 	{
 			id,
 			id_livro,
@@ -57,10 +64,10 @@
 			id,
 			livro,
 			autor,
-			nº de paginas,
+			nÂº de paginas,
 			quantidade_comprada,
-			preço,
-			data de aquisição
+			preÃ§o,
+			data de aquisiÃ§Ã£o
 
 	}
 
