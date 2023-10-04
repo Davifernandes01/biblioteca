@@ -15,10 +15,16 @@ create table Compra_livro(
 --teste
 
 INSERT into Compra_livro(nome, autor, paginas,quantidade,preco,data)values('Percy Jackson e o ladrão de raios', 'Rick Riordan', 265, 5 ,30.99, GETDATE())
+insert into Clientes(nome,cpf,telefone) values ('rada', '162.234.244-76','23465783459')
 
 SELECT * from Compra_livro;
 
-select * from Livros;
+select * from  Livros;
+
+insert into Emprestimos(dataEmprestimo,dataDevolver,isDevolveu,id_cliente,id_livro,quantidade)
+values (GETDATE(), DATEADD(day,21,GETDATE()), 0, 1,1,1)
+
+SELECT * from Emprestimos;
 -----
 GO
 
