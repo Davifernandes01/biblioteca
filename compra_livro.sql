@@ -19,9 +19,10 @@ INSERT into Compra_livro(nome, autor, paginas,quantidade,preco,data)values('Perc
 SELECT * from Compra_livro;
 
 select * from Livros;
-
+-----
 GO
 
+--trigger para adicionar o none, autor, paginas e quantidade de um livro, na tabela correspondente
 create TRIGGER adiciona_livro
 on Compra_livro
 for insert 
